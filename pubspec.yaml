@@ -1,0 +1,175 @@
+name: Edimu
+description: Edimu app
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+version: 0.5.6+11
+
+environment:
+  sdk: ">=2.6.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^0.1.2
+  scoped_model: 
+  shared_preferences: ^0.5.7+3
+  rxdart: ^0.21.0
+  json_annotation: ^2.0.0
+  http: any
+  flutter_html: ^0.11.1
+  # flutter_open_whatsapp: ^0.1.2
+  whatsapp_unilink:
+
+  ##Tambahan untuk Edimu
+  indonesia:
+  flutter_native_splash: ^0.3.2
+  rflutter_alert: ^1.0.3
+  # credit_card: 0.1.6
+  awesome_card: ^1.1.0
+  animator: ^2.0.1
+  toggle_switch: "^0.1.8"
+  url_launcher: ^5.4.11
+  flutter_masked_text: ^0.8.0
+  vibration: ^1.4.0
+  image_picker: ^0.6.7+11
+  image_picker_for_web: ^0.1.0
+  universal_html: ^1.2.1
+  expandable: ^4.1.4
+  json_table: ^1.4.0
+  loading_animations: ^2.1.0
+  dio: ^3.0.10
+  flutter_easyloading: ^2.2.1
+  getwidget: ^1.2.4
+  flutter_staggered_grid_view: ^0.3.2
+  permission_handler: ^5.0.1+1
+  clipboard: ^0.1.2+8
+  format_indonesia: ^0.1.0
+  # flutter_pagewise: ^1.2.3
+  pull_to_refresh: any
+  shimmer: ^1.1.2
+  qr_flutter: ^3.2.0
+  # qrscan: ^0.3.0
+  # majascan: ^0.4.0
+  # modal_bottom_sheet: ^1.0.0+1
+  modal_bottom_sheet: ^2.0.1
+  intl: ^0.16.1
+  convex_bottom_bar: ^2.7.1+2
+  simple_animations: ^2.5.1
+  flutter_launcher_icons: ^0.8.1
+  # avatar_glow: ^1.2.0
+  # fluttercontactpicker: ^4.2.1
+  # tanggal_indonesia: ^1.0.2
+  google_fonts: ^1.1.2
+  path_provider: ^2.0.2
+  dropdown_search: ^5.0.2
+  page_transition: ^1.1.7
+  carousel_slider: ^4.1.1
+  pin_code_fields: ^7.4.0
+  
+
+flutter_native_splash:
+  image: lib/assets/splash.png
+  color: "#FFFFFF"
+  # android_disable_fullscreen: true
+
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "lib/assets/logo_icon.png"
+  adaptive_icon_background: "#FFFFFF"
+  adaptive_icon_foreground: "lib/assets/logo_icon.png"
+  
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  # scoped_model: 
+  # rxdart: ^0.21.0
+  # json_annotation: ^2.0.0
+  # http: any
+  # flutter_html: ^0.11.1
+  # flutter_open_whatsapp: ^0.1.2
+  build_runner: ^1.6.2
+  build_web_compilers: ^2.0.0
+  flutter_automation:
+
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter.
+flutter:
+ # assets:
+ #   - assets/pembayaran.png
+ #   - assets/send.png
+ #   - assets/transfer.png
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - lib/assets/
+    - lib/assets/PPOB/
+    - lib/assets/ktam/
+    - lib/assets/bank_icons/
+    - lib/assets/transfer.png
+    - lib/assets/topup.png
+    - lib/assets/sekolah.png
+    - lib/assets/sekolah_biru.png
+    - lib/assets/whatsapp.png
+    - lib/assets/marketplacekomoditas.png
+    - lib/assets/marketplacelokal.png
+    - lib/assets/marketplacekomunitas.png
+    - lib/assets/card.png
+    - lib/assets/beach.png
+    - lib/assets/logo.png
+    - lib/assets/logo_2.png
+    - lib/assets/tariktunai.png
+    - lib/assets/bg-geni.jpg
+    - lib/assets/logo-transparan.png
+    - lib/assets/icon_map.png
+    - lib/assets/splashfull.png
+    - lib/assets/10ribu.jpg
+    - lib/assets/20ribu.jpg
+    - lib/assets/50ribu.jpg
+    - lib/assets/100ribu.jpg
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware.
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages

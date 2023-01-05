@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>CFBundleDevelopmentRegion</key>
+		<string>$(DEVELOPMENT_LANGUAGE)</string>
+		<key>CFBundleDisplayName</key>
+		<string>klikgeni</string>
+		<key>CFBundleExecutable</key>
+		<string>$(EXECUTABLE_NAME)</string>
+		<key>CFBundleIdentifier</key>
+		<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+		<key>CFBundleInfoDictionaryVersion</key>
+		<string>6.0</string>
+		<key>CFBundleName</key>
+		<string>Edimu</string>
+		<key>CFBundlePackageType</key>
+		<string>APPL</string>
+		<key>CFBundleShortVersionString</key>
+		<string>$(MARKETING_VERSION)</string>
+		<key>CFBundleSignature</key>
+		<string>????</string>
+		<key>CFBundleVersion</key>
+		<string>$(CURRENT_PROJECT_VERSION)</string>
+		<key>LSRequiresIPhoneOS</key>
+		<true/>
+		<key>NSAppleMusicUsageDescription</key>
+		<string>Izin akses media library</string>
+		<key>NSCalendarsUsageDescription</key>
+		<string>Izin penggunaan kalendar</string>
+		<key>NSCameraUsageDescription</key>
+		<string>Izin akses kamera agar Edimu bisa meng-upload barang yang akan anda jual</string>
+		<key>NSContactsUsageDescription</key>
+		<string>Butuh akses kontak anda agar mempermudah pembelian pulsa</string>
+		<key>NSLocationAlwaysUsageDescription</key>
+		<string>Izin akses lokasi</string>
+		<key>NSLocationWhenInUseUsageDescription</key>
+		<string>Izin akses lokasi</string>
+		<key>NSMotionUsageDescription</key>
+		<string>Izin penggunaan motion</string>
+		<key>NSPhotoLibraryUsageDescription</key>
+		<string>Izin akses gallery</string>
+		<key>NSSpeechRecognitionUsageDescription</key>
+		<string>Izin penggunaan microphone pada akses-akses tertentu</string>
+		<key>UILaunchStoryboardName</key>
+		<string>LaunchScreen</string>
+		<key>UIMainStoryboardFile</key>
+		<string>Main</string>
+		<key>UISupportedInterfaceOrientations</key>
+		<array>
+			<string>UIInterfaceOrientationPortrait</string>
+			<string>UIInterfaceOrientationLandscapeLeft</string>
+			<string>UIInterfaceOrientationLandscapeRight</string>
+			<string>UIInterfaceOrientationPortraitUpsideDown</string>
+		</array>
+		<key>UISupportedInterfaceOrientations~ipad</key>
+		<array>
+			<string>UIInterfaceOrientationPortrait</string>
+			<string>UIInterfaceOrientationPortraitUpsideDown</string>
+			<string>UIInterfaceOrientationLandscapeLeft</string>
+			<string>UIInterfaceOrientationLandscapeRight</string>
+		</array>
+		<key>UIViewControllerBasedStatusBarAppearance</key>
+		<false/>
+		<key>UIStatusBarHidden</key>
+		<false/>
+	</dict>
+</plist>
