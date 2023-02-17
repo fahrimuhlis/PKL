@@ -52,8 +52,7 @@ class _rootState extends State<root> {
       );
     } else if (widget.model.statusAuth == 203 ||
         widget.model.statusAuth == 200) {
-      await widget.model
-          .login(tokenroot: widget.model.token);
+      await widget.model.login(tokenroot: widget.model.token);
       await widget.model.getLapakLokal(1);
       // await widget.model.getDataMinyak();
       Navigator.pushReplacement(
@@ -104,7 +103,7 @@ class _rootState extends State<root> {
           body: Container(
             width: MediaQuery.of(context).size.width,
             height: MediaQuery.of(context).size.height,
-            decoration: Warna.bgGradient,
+            decoration: Warna.bgGradient(Warna.warnaHome),
             child: Center(
               child: Stack(
                 alignment: Alignment.center,

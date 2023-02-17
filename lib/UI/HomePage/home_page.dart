@@ -137,7 +137,7 @@ class _homePageState extends State<homePage> {
                           children: <Widget>[
                             //Image.asset('assets/transfer.png'),
                             Image.asset(
-                              "lib/assets/PPOB/pembayaran emoney.png",
+                              AsetLokal.icon_fitur4,
                               width: 50,
                               height: 50,
                             ),
@@ -146,13 +146,9 @@ class _homePageState extends State<homePage> {
                               height: 4,
                             ),
                             Text(
-                              'Topup &',
+                              Teks.fitur4,
                               style: TextStyle(fontSize: 14),
                             ),
-                            Text(
-                              'E-Money',
-                              style: TextStyle(fontSize: 14),
-                            )
                           ],
                         ),
                       ),
@@ -176,7 +172,7 @@ class _homePageState extends State<homePage> {
                           children: <Widget>[
                             //Image.asset('assets/transfer.png'),
                             Image.asset(
-                              "lib/assets/PPOB/pembayaran pulsa.png",
+                              AsetLokal.icon_fitur5,
                               width: 50,
                               height: 50,
                             ),
@@ -185,13 +181,9 @@ class _homePageState extends State<homePage> {
                               height: 4,
                             ),
                             Text(
-                              'Pulsa &',
+                              Teks.fitur5,
                               style: TextStyle(fontSize: 14),
                             ),
-                            Text(
-                              'PLN',
-                              style: TextStyle(fontSize: 14),
-                            )
                           ],
                         ))),
                     onTap: () {
@@ -213,7 +205,7 @@ class _homePageState extends State<homePage> {
                           children: <Widget>[
                             //Image.asset('assets/transfer.png'),
                             Image.asset(
-                              "lib/assets/PPOB/pembayaran multifinance.png",
+                              AsetLokal.icon_fitur6,
                               width: 50,
                               height: 50,
                             ),
@@ -222,13 +214,9 @@ class _homePageState extends State<homePage> {
                               height: 4,
                             ),
                             Text(
-                              'Tagihan',
+                              Teks.fitur6,
                               style: TextStyle(fontSize: 14),
                             ),
-                            Text(
-                              '',
-                              style: TextStyle(fontSize: 14),
-                            )
                           ],
                         ))),
                     onTap: () {
@@ -265,7 +253,7 @@ class _homePageState extends State<homePage> {
                           children: <Widget>[
                             //Image.asset('assets/transfer.png'),
                             Image.asset(
-                              "lib/assets/marketplacelokal.png",
+                              AsetLokal.icon_fitur7,
                               width: 50,
                               height: 50,
                             ),
@@ -274,13 +262,9 @@ class _homePageState extends State<homePage> {
                               height: 4,
                             ),
                             Text(
-                              'Pasar',
+                              Teks.fitur7,
                               style: TextStyle(fontSize: 14),
                             ),
-                            Text(
-                              'Lokal',
-                              style: TextStyle(fontSize: 14),
-                            )
                           ],
                         ))),
                     onTap: () {
@@ -304,7 +288,7 @@ class _homePageState extends State<homePage> {
                           children: <Widget>[
                             //Image.asset('assets/transfer.png'),
                             Image.asset(
-                              "lib/assets/marketplacekomunitas.png",
+                              AsetLokal.icon_fitur8,
                               width: 50,
                               height: 50,
                             ),
@@ -313,11 +297,7 @@ class _homePageState extends State<homePage> {
                               height: 4,
                             ),
                             Text(
-                              'Pasar',
-                              style: TextStyle(fontSize: 14),
-                            ),
-                            Text(
-                              'Komunitas',
+                              Teks.fitur8,
                               style: TextStyle(fontSize: 14),
                             ),
                           ],
@@ -382,7 +362,7 @@ class _homePageState extends State<homePage> {
                           children: <Widget>[
                             //Image.asset('assets/transfer.png'),
                             Image.asset(
-                              "lib/assets/marketplacekomoditas.png",
+                              AsetLokal.icon_fitur9,
                               width: 50,
                               height: 50,
                             ),
@@ -391,13 +371,9 @@ class _homePageState extends State<homePage> {
                               height: 4,
                             ),
                             Text(
-                              'Pasar',
+                              Teks.fitur9,
                               style: TextStyle(fontSize: 14),
                             ),
-                            Text(
-                              'Komoditas',
-                              style: TextStyle(fontSize: 14),
-                            )
                           ],
                         ))),
                     onTap: () {
@@ -429,7 +405,7 @@ class _homePageState extends State<homePage> {
               children: <Widget>[
                 //Image.asset('assets/transfer.png'),
                 Image.asset(
-                  "lib/assets/transfer.png",
+                  AsetLokal.icon_fitur3,
                   width: 50,
                   height: 50,
                 ),
@@ -438,13 +414,9 @@ class _homePageState extends State<homePage> {
                   height: 4,
                 ),
                 Text(
-                  'Transfer',
+                  Teks.fitur3,
                   style: TextStyle(fontSize: 14, fontWeight: FontWeight.w500),
                 ),
-                Text(
-                  ' ',
-                  style: TextStyle(fontSize: 14, fontWeight: FontWeight.w500),
-                )
               ],
             ))),
         onTap: () {
@@ -475,7 +447,7 @@ class _homePageState extends State<homePage> {
                 //Image.asset('assets/send.png'),
                 //Icon(Icons.attach_money),
                 Image.asset(
-                  "lib/assets/topup.png",
+                  AsetLokal.icon_fitur2,
                   width: 50,
                   height: 50,
                 ),
@@ -483,11 +455,7 @@ class _homePageState extends State<homePage> {
                   height: 4,
                 ),
                 Text(
-                  'Isi',
-                  style: TextStyle(fontSize: 14, fontWeight: FontWeight.w500),
-                ),
-                Text(
-                  'Saldo',
+                  Teks.fitur2,
                   style: TextStyle(fontSize: 14, fontWeight: FontWeight.w500),
                 ),
               ],
@@ -603,7 +571,7 @@ class _homePageState extends State<homePage> {
               children: <Widget>[
                 //Image.asset('assets/transfer.png'),
                 Image.asset(
-                  "lib/assets/tariktunai.png",
+                  AsetLokal.icon_fitur1,
                   width: 50,
                   height: 50,
                 ),
@@ -612,13 +580,9 @@ class _homePageState extends State<homePage> {
                   height: 4,
                 ),
                 Text(
-                  'Tarik',
+                  Teks.fitur1,
                   style: TextStyle(fontSize: 14, fontWeight: FontWeight.w500),
                 ),
-                Text(
-                  'Tunai',
-                  style: TextStyle(fontSize: 14, fontWeight: FontWeight.w500),
-                )
               ],
             ),
           ),
@@ -674,7 +638,7 @@ class _homePageState extends State<homePage> {
             child: Container(
               width: MediaQuery.of(context).size.width,
               height: MediaQuery.of(context).size.height,
-              decoration: Warna.bgGradient,
+              decoration: Warna.bgGradient(Warna.warnaHome),
               child: Container(
                 // margin: EdgeInsets.symmetric(horizontal: 10),
                 child: ListView(
@@ -1038,7 +1002,7 @@ class _homePageState extends State<homePage> {
             style: ElevatedButton.styleFrom(
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.all(Radius.circular(25))),
-              backgroundColor: Colors.red[800],
+              backgroundColor: Colors.blue,
             ),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,

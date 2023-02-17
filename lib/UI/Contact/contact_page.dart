@@ -54,93 +54,97 @@ class _contactPageState extends State<contactPage> {
               centerTitle: true,
             ),
             backgroundColor: Colors.white,
-            body: ListView(
-              // shrinkWrap: true,
-              children: [
-                Padding(
-                  padding: const EdgeInsets.all(11.0),
-                  child: TextField(
-                    onChanged: (text) {
-                      text = text.toLowerCase();
+            body: Container(
+              decoration: Warna.bgGradient(Warna.warnaTunai),
+              child: ListView(
+                // shrinkWrap: true,
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.all(11.0),
+                    child: TextField(
+                      onChanged: (text) {
+                        text = text.toLowerCase();
 
-                      setState(() {
-                        bool isAngka = apakahAngka(text);
+                        setState(() {
+                          bool isAngka = apakahAngka(text);
 
-                        if (isAngka) {
-                          //debugPrint("adalah ANGKA");
-                          //coba angka rekening
-                          displayContactList =
-                              masterContactList.contactLists.where((contact) {
-                            var rekening = contact.id.toString().toLowerCase();
+                          if (isAngka) {
+                            //debugPrint("adalah ANGKA");
+                            //coba angka rekening
+                            displayContactList =
+                                masterContactList.contactLists.where((contact) {
+                              var rekening =
+                                  contact.id.toString().toLowerCase();
 
-                            return rekening.contains(text.toLowerCase());
-                          }).toList();
-                        } else {
-                          //debugPrint("adalah HURUF");
-                          //  udah bisa
-                          displayContactList =
-                              masterContactList.contactLists.where((contact) {
-                            var nama = contact.name.toLowerCase();
-                            return nama.contains(text);
-                          }).toList();
-                        }
-                      });
-                    },
-                    controller: searchController,
-                    decoration: InputDecoration(
-                        labelText: "Search",
-                        hintText: "Cari nama",
-                        prefixIcon: Icon(Icons.search),
-                        border: OutlineInputBorder(
-                            borderRadius:
-                                BorderRadius.all(Radius.circular(25.0)))),
+                              return rekening.contains(text.toLowerCase());
+                            }).toList();
+                          } else {
+                            //debugPrint("adalah HURUF");
+                            //  udah bisa
+                            displayContactList =
+                                masterContactList.contactLists.where((contact) {
+                              var nama = contact.name.toLowerCase();
+                              return nama.contains(text);
+                            }).toList();
+                          }
+                        });
+                      },
+                      controller: searchController,
+                      decoration: InputDecoration(
+                          labelText: "Search",
+                          hintText: "Cari nama",
+                          prefixIcon: Icon(Icons.search),
+                          border: OutlineInputBorder(
+                              borderRadius:
+                                  BorderRadius.all(Radius.circular(25.0)))),
+                    ),
                   ),
-                ),
-                SizedBox(
-                  height: 7,
-                ),
-                Container(
-                  height: MediaQuery.of(context).size.height * 0.95,
-                  child: ListView.builder(
-                      // physics: NeverScrollableScrollPhysics(),
-                      shrinkWrap: true,
-                      itemCount: displayContactList.length,
-                      itemBuilder: (context, index) {
-                        return ListTile(
-                          title: Text(displayContactList[index].name),
-                          subtitle: Text(
-                            displayContactList[index].id,
-                            style: TextStyle(color: Colors.blue),
-                          ),
-                          onTap: () {},
-                          //trailing: Text(displayContactList[index].name),
-                          trailing: IconButton(
-                            //icon: Icon(Icons.send),
-                            icon: Image.asset(
-                              "lib/assets/transfer@contact.png",
-                              width: 40,
-                              height: 40,
+                  SizedBox(
+                    height: 7,
+                  ),
+                  Container(
+                    height: MediaQuery.of(context).size.height * 0.95,
+                    child: ListView.builder(
+                        // physics: NeverScrollableScrollPhysics(),
+                        shrinkWrap: true,
+                        itemCount: displayContactList.length,
+                        itemBuilder: (context, index) {
+                          return ListTile(
+                            title: Text(displayContactList[index].name),
+                            subtitle: Text(
+                              displayContactList[index].id,
+                              style: TextStyle(color: Colors.blue),
                             ),
-                            onPressed: () {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                    builder: (context) => transferPage(
-                                          model,
-                                          userName:
-                                              displayContactList[index].id,
-                                        )),
-                              );
-                            },
-                          ),
-                        );
-                      }),
-                ),
-                Container(
-                  height: 175,
-                  color: Colors.blue,
-                )
-              ],
+                            onTap: () {},
+                            //trailing: Text(displayContactList[index].name),
+                            trailing: IconButton(
+                              //icon: Icon(Icons.send),
+                              icon: Image.asset(
+                                "lib/assets/transfer@contact.png",
+                                width: 40,
+                                height: 40,
+                              ),
+                              onPressed: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => transferPage(
+                                            model,
+                                            userName:
+                                                displayContactList[index].id,
+                                          )),
+                                );
+                              },
+                            ),
+                          );
+                        }),
+                  ),
+                  Container(
+                    height: 175,
+                    color: Colors.blue,
+                  )
+                ],
+              ),
             ),
             bottomNavigationBar: bottomNavBar(1, widget.model),
           );

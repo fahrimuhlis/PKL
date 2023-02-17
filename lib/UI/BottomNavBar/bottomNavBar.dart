@@ -66,7 +66,7 @@ class _bottomNavBarState extends State<bottomNavBar> {
   Widget build(BuildContext context) {
     return BottomNavigationBar(
       type: BottomNavigationBarType.fixed,
-      backgroundColor: Colors.white,
+      backgroundColor: Warna.warnaNavBar,
       selectedItemColor: Warna.primary,
       //showSelectedLabels: false,
       // showUnselectedLabels: false,
@@ -80,15 +80,15 @@ class _bottomNavBarState extends State<bottomNavBar> {
       items: <BottomNavigationBarItem>[
         BottomNavigationBarItem(
           icon: Icon(Icons.home),
-          label: 'Beranda',
+          label: Teks.navbar1,
         ),
         BottomNavigationBarItem(
           icon: Icon(Icons.perm_contact_calendar),
-          label: 'Kontak',
+          label: Teks.navbar2,
         ),
         BottomNavigationBarItem(
           icon: Icon(Icons.compare_arrows),
-          label: 'Transaksi',
+          label: Teks.navbar3,
         ),
 //        BottomNavigationBarItem(
 //          icon: Icon(Icons.mail),
@@ -96,7 +96,7 @@ class _bottomNavBarState extends State<bottomNavBar> {
 //        ),
         BottomNavigationBarItem(
           icon: Icon(Icons.person),
-          label: 'Profil',
+          label: Teks.navbar4,
         ),
       ],
       currentIndex: _selectedIndex,
